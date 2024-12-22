@@ -61,8 +61,18 @@ namespace BloodManagementSystem
                         con.Close();
 
 
-                        Response.Write("<script>alert('register successfully')</script>");
-                        Response.Redirect("UserLoginPage.aspx");
+                        Response.Write("<script>alert('register successfully go to login page')</script>");
+                        //Response.Redirect("UserLoginPage.aspx");
+                        firstname.Text = "";
+                        lastname.Text = "";
+                        txtUsername.Text = "";
+                        txtPassword.Text = "";
+                        txtDateOfBirth.Text = "";
+                        city.SelectedIndex = -1;
+                        state.SelectedIndex = -1;
+                        txtPinCode.Text = "";
+                        txtFullAddress.Text = "";
+                        txtContactNumber.Text = "";
                     }
 
 
