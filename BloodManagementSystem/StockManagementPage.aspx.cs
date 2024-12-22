@@ -15,8 +15,26 @@ namespace BloodManagementSystem
         string strrcon = ConfigurationManager.ConnectionStrings["connString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                LoadBloodStocks();
+            }
 
         }
+        private void LoadBloodStocks()
+        {
+            using (SqlConnection conn = new SqlConnection(strrcon))
+            {
+                string query = "SELECT * FROM detailsstock";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                GridView.DataSource = dt;
+                GridView.DataBind();
+            }
+        }
+
+    
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -79,6 +97,22 @@ namespace BloodManagementSystem
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
+        
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(strrcon))
+            {
+                string query = "SELECT * FROM detailsstock WHERE collectiondate = @date";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@date", date.Text.Trim());
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                GridView.DataSource = dt;
+                GridView.DataBind();
+            }
+
+        }
     }
 }

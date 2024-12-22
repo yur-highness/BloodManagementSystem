@@ -9,7 +9,7 @@
      <div class="container mt-5 py-5">
      <div class="row mt-5">
          <div class="col-md-12">
-             <h2 class="text-center mb-3">Blood Stock Details</h2>
+             <h2 class="text-center mb-3 mr-5 ">New Stock</h2>
      <div class="row">
           <div class="col-md-6 mb-3">
      <label>ID</label>
@@ -58,39 +58,29 @@
          </div>
           <div class="d-grid">
      <asp:Button ID="Button1" runat="server" Text="Register" CssClass="btn" OnClick="Button1_Click" />
-               <asp:Button ID="Button2" runat="server" Text="viewDATA" CssClass="btn" PostBackUrl="~/viewDATA.aspx"  />
+              
  </div>
 </div>
     <div class="container mt-5 py-5">
         <div class="row mt-5">
             <div class="col-md-12">
                 <h2 class="text-center mb-4">Blood Stock Details</h2>
-                <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
-               <!--  <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Blood Group</th>
-                            <th>Stock</th>
-                            <th>Collection Date</th>
-                            <th>Expiry Date</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A+</td>
-                            <td>10</td>
-                            <td>2024-12-01</td>
-                            <td>2024-12-15</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm">Edit</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
+                <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False"  cssClass="table-style">
+                    <Columns>
+                        <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
+                        <asp:BoundField DataField="bloodgroup" HeaderText="bloodgroup" SortExpression="bloodgroup" />
+                        <asp:BoundField DataField="units" HeaderText="units" SortExpression="units" />
+                        <asp:BoundField DataField="collectiondate" HeaderText="collectiondate" SortExpression="collectiondate" />
+                        <asp:BoundField DataField="expirydate" HeaderText="expirydate" SortExpression="expirydate" />
+                    </Columns>
+                </asp:GridView>
+                <br />
+               <asp:TextBox ID="date" runat="server" TextMode="Date" CssClass="form-control" placeholder="Enter Collection Date" Height="38px" Width="330px" ></asp:TextBox>
+                <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bloodBankDBConnectionString %>" SelectCommand="SELECT * FROM [detailsstock]"></asp:SqlDataSource>
+            
                 
-                    </tbody>
-                </table> -->
+              
             </div>
         </div>
     </div>

@@ -48,36 +48,51 @@
  </li>
                     <li class="nav-item">
                         
-                        <asp:HyperLink ID="donorreg" runat="server" class="nav-link" NavigateUrl="~/DonorRegistrationPage.aspx">Donor Registration</asp:HyperLink>
+                        <asp:HyperLink ID="donorreg" runat="server" class="nav-link" NavigateUrl="~/DonorRegistrationPage.aspx">Donor</asp:HyperLink>
                     </li>
                     <li class="nav-item">
                  
-                        <asp:HyperLink ID="stock" runat="server" class="nav-link" NavigateUrl="~/StockManagementPage.aspx">Stock Management</asp:HyperLink>
+                        <asp:HyperLink ID="stock" runat="server" class="nav-link" NavigateUrl="~/StockManagementPage.aspx">Stock</asp:HyperLink>
                     </li>
                     <li class="nav-item">
                 
-                        <asp:HyperLink ID="certificate" runat="server" class="nav-link" NavigateUrl="~/Certificate.aspx">Certificate</asp:HyperLink>
+                        <asp:HyperLink ID="certificate" runat="server" class="nav-link" NavigateUrl="~/Certificates.aspx">Certificate</asp:HyperLink>
                     </li>
                 </ul>
                 <div class="gap  mr-5">
                     <ul class="navbar-nav ms-auto ml-5">
-                                  <li class="nav-item mt-2 ">
+                                  <li class="nav-item mt-2 px-2 ">
                                       <asp:Button ID="login1" runat="server" Text="Login" class=" btn"  PostBackUrl="~/UserLoginPage.aspx" />
                                      
 </li>           
 
 
-                        <li class="nav-item mt-2 " >
+                        <li class="nav-item mt-2  px-2 " >
                             <asp:Button ID="logout1" runat="server" Text="Logout" class=" padding btn" OnClick="logout1_Click" />
                         </li>
 
-
-
-                        <li class="nav-item greet mt-4">
-                       
-                            <asp:Label ID="Label2" runat="server" Text="hello admin"></asp:Label>
+                        
+                        <li class="nav-item mt-2  px-2 " > 
+                     
+                            <asp:Button ID="viewDATA" runat="server" Text="viewDATA" CssClass="btn" PostBackUrl="~/viewDATA.aspx"  />
                         </li>
+
+
+                           
+                        <li class="nav-item mt-2  px-2 " > 
+                     
+                            <asp:Label ID="Label1" runat="server" Text="hello  admin"></asp:Label>
+                        </li>
+
+
+
+
+           
+                       
+              
+                   
                         </ul>
+                        
                 </div>
           
                       

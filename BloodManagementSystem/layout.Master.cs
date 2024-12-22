@@ -16,29 +16,35 @@ namespace BloodManagementSystem
                  if (Session["role"]==null)
                 {
                   
-                    Label2.Visible = false;
+                    Label1.Visible = false;
                     stock.Visible = false;
                     certificate.Visible = false;
                     donorreg.Visible = false;
+                    viewDATA.Visible = false;
+                   
                     
                 }
                 else if(Session["role"].Equals("user"))
                 {
               
-                    Label2.Visible = true;
-                    Label2.Text ="hello "+ Session["fullname"].ToString();
+                    Label1.Visible = true;
+                    Label1.Text ="hello "+ Session["fullname"].ToString();
                     stock.Visible = false;
                     certificate.Visible = false;
                     login1.Visible = false;
+                    viewDATA.Visible = false;
+               
+                   
                 }
                  else if (Session["role"].Equals("admin"))
                 {
                   
-                    Label2.Visible = true;
-                    Label2.Visible = true;
+                    Label1.Visible = true;
+                    Label1.Visible = true;
                     stock.Visible = true;
                     certificate.Visible = true;
                     login1.Visible = false;
+                    viewDATA.Visible = true;
                 }
             }
             catch (Exception ex)

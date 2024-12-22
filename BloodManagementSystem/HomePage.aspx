@@ -6,16 +6,19 @@
 
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div class="hero mt-5">
         <div class="text-center">
-            <h1 class="display-4"><span class="white">Welc</span>ome to Blood Bank Management System</h1>
+            <h1 class="display-4"><span class="white ">Welco</span>me to Blood Bank Management System</h1>
             <p class="lead">Efficiently saving lives with modern technology.</p>
-            <a href="DonorRegistrationPage.aspx" title="login to register" class="btn btn-success btn-lg" id="donor">Become a Donor</a>
+            <asp:Label ID="donorreg" runat="server" Text="sign  up to become a  donor"  cssClass=""></asp:Label><br />
+            <asp:Button ID="signup" runat="server" Text="SIGN UP" class="btn  btn-lg" PostBackUrl="~/UserRegistration.aspx"/>
+        
+            <asp:Button ID="donor" runat="server" Text="Become a Donor" class="btn btn-success btn-lg" PostBackUrl="~/DonorRegistrationPage.aspx" />
         </div>
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-5 px-2">
+    <section id="about" class="py-5 px-2  mt-3">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
             <p class="text-center text-black-50">We are dedicated to managing blood donations and stocks to ensure availability when needed. Our system connects donors and recipients with efficiency and transparency.
@@ -110,6 +113,11 @@ Together, we can make a difference, one donation at a time!
             
                             <asp:TextBox ID="email" runat="server" class="form-control" placeholder="Your Email" Height="35px" Width="524px"></asp:TextBox>
                         </div>
+                     <div class="mb-3">
+     <label>Email</label>
+            
+     <asp:TextBox ID="phone" runat="server" class="form-control" placeholder="contact no" Height="35px" Width="524px"></asp:TextBox>
+ </div>
                         <div class="mb-3">
                             <label>Message</label>
                             
@@ -117,7 +125,7 @@ Together, we can make a difference, one donation at a time!
                         </div>
                         <div class="d-grid">
                           
-                            <asp:Button ID="Button1" runat="server" Text="Send Message" class="btn" />
+                            <asp:Button ID="Button1" runat="server" Text="Send Message" class="btn" OnClick="Button1_Click" />
                         </div>
                     
                 </div>

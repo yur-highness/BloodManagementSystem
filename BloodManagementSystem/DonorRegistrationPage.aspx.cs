@@ -64,28 +64,29 @@ namespace BloodManagementSystem
 
 
                             cmd.ExecuteNonQuery();
-                            con.Close();
+                         
                            
 
                             int rowsAffected = cmd.ExecuteNonQuery();
                             if (rowsAffected > 0)
                             {
-                                //Response.Write("<script>alert('Donor registered successfully.');</script>");
-                                //ClientScript.RegisterStartupScript(this.GetType(), "alertMessage", "alert('Donor registered successfully.');", true);
-                                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertMessage", "alert('Donor registered successfully.');", true);
-                                Response.Redirect("HomePage.aspx");
+
+                                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Registration Successfully returnto login page')", true);
+                                con.Close();
+                                firstName.Text = "";
+                                lastName.Text = "";
+                                dob.Text = "";
+                                gender.SelectedIndex = -1;
+                                phone.Text = "";
+                                bloodGroup.SelectedIndex = -1;
+
                             }
                             else
                             {
                                 Response.Write("<script>alert('Error: Donor registration failed.');</script>");
                             }
 
-                            firstName.Text = "";
-                            lastName.Text = "";
-                            dob.Text = "";
-                            gender.SelectedIndex = -1;
-                            phone.Text = "";
-                            bloodGroup.SelectedIndex = -1;
+                      
                         }
                     }
                 }

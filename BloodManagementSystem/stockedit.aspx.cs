@@ -35,7 +35,7 @@ namespace BloodManagementSystem
                         da.Fill(ds, "detailsdonor");
                         if (ds.Tables[0].Rows.Count != 0)
                         {
-                            //bloodgroup1.SelectedItem.Value = ds.Tables[0].Rows[0].ItemArray[1].ToString();
+                         
                             bloodgroup1.Items.Clear();
 
                             bloodgroup1.Items.Add(new ListItem("A+", "A+"));

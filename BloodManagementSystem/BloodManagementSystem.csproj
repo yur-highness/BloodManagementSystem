@@ -2172,6 +2172,7 @@
     <Content Include="fontawesome\svgs\solid\z.svg" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\Donate blood colorful round illustration royalty free illustration.jpg" />
+    <Content Include="img\ecbcb87164e29771a67eb40a3e85d3b6.png" />
     <Content Include="img\Free Photo _ World blood donor day creative collage.jpg" />
     <Content Include="img\Free PSD _ Blood donation print template illustrated.jpg" />
     <Content Include="img\logo.png" />
@@ -2179,6 +2180,7 @@
     <Content Include="img\Premium Vector _ Blood Donation Vector Concept.jpg" />
     <Content Include="img\Symbol Vectors &amp; Illustrations for Free Download _ Freepik.jpg" />
     <Content Include="img\_Blood Donation Awareness_ Magnet for Sale by 87-Aesthetics.jpg" />
+    <Content Include="viewcertificate.aspx" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
     <Content Include="UserLoginPage.aspx" />
@@ -2242,6 +2244,13 @@
     </Compile>
     <Compile Include="UserRegistration.aspx.designer.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewcertificate.aspx.cs">
+      <DependentUpon>viewcertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewcertificate.aspx.designer.cs">
+      <DependentUpon>viewcertificate.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewDATA.aspx.cs">
       <DependentUpon>viewDATA.aspx</DependentUpon>

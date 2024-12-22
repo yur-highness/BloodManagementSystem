@@ -12,6 +12,54 @@
     align-items: center;
 }
 
+    .hero h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    }
+
+/* Table Styling */
+.table-style {
+    border-collapse: collapse;
+    margin: 28px 0 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.table-style th, .table-style td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table-style th {
+    background-color: #C8233350;
+    color: #333;
+}
+
+.table-style tr:nth-child(even) {
+    background-color: #21D0C340;
+}
+
+.table-style tr:hover {
+    background-color: #007BFF30;
+}
+
+.unik-c {
+    color: #C82333 !important;
+}
+
+
+
+
 
 .card:hover {
     transform: scale(1.05);
@@ -20,7 +68,7 @@
 
 
 .gap {
-    margin-left: 20%;
+    margin-left: 24%;
 }
 
 
@@ -57,21 +105,31 @@
     color:whitesmoke
 }
 
-.btn{
-    padding: 10px 30px;
-    border:none;
-    outline:none;
-    border-radius:20px;
-    margin-top:20px;
-
-    background-color:rgb(181, 74, 74);
+.btn {
+    padding: 12px 40px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    background-color: #E74C3C; /* a more modern red color */
+    color: #FFFFFF; /* white text color */
+    font-size: 16px; /* larger font size */
+    font-weight: bold; /* bold font weight */
+    cursor: pointer; /* change cursor to a pointer on hover */
+    transition: background-color 0.3s ease-in-out; /* add a transition effect */
 }
 
-.btn:hover {
-        color: whitesmoke;
-  }
+    .btn:hover {
+        background-color: #C0392B; /* a darker version of the background color on hover */
+        color: #FFFFFF; /* keep the text color white on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow on hover */
+    }
 
 
+
+.form-group {
+    margin-bottom: 20px;
+}
 
 
 .typewriter {
@@ -121,3 +179,32 @@
     color: rgb(181, 74, 74);
     
 }
+
+
+/* Input Fields */
+input{
+    padding:10px 20px;
+    outline:none;
+
+
+
+}
+
+.imgblock{
+    position:absolute;
+}
+
+.imgcontainer{
+    position:relative;
+}
+.label{
+    position:absolute;
+    top:0%;
+    left:50%;
+    z-index:99;
+}
+
+
+
+
+
