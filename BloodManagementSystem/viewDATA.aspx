@@ -15,8 +15,12 @@
     <br />
     <br />
     <br />
-    <asp:Label ID="Label3" runat="server" Text="Stock details"></asp:Label>
-  <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" CssClass="table-style" Height="445px" Width="1336px">
+     <div class="card-header bg-success text-white text-center">
+     <h3>Stock Details</h3>
+ </div>   &nbsp;&nbsp;
+   <br />
+   <div  class="align-content-center m-auto">
+  <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" CssClass="table-style center-gridview" Height="445px" Width="1336px" AllowPaging="True">
 
   <Columns>
     <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />
@@ -27,21 +31,24 @@
 
   </Columns>
 </asp:GridView>
+      
 
 &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bloodBankDBConnectionString %>" SelectCommand="SELECT * FROM [detailsstock]"></asp:SqlDataSource>
     <br />
     <br />
-    <asp:Button ID="EDIT1" runat="server" PostBackUrl="~/stockedit.aspx" Text="EDIT" Width="410px" CssClass="btn" />
+    <asp:Button ID="EDIT1" runat="server" PostBackUrl="~/stockedit.aspx" Text="EDIT" Width="410px" CssClass="btn ml-5" />
     <br />
 &nbsp;<br />
     <br />
     <br />
 &nbsp;<br />
     <br />
-&nbsp;<asp:Label ID="Label4" runat="server" Text="donor details"></asp:Label>
+&nbsp; <div class="card-header bg-success text-white text-center">
+     <h3>Donor Details</h3>
+ </div>
     &nbsp;&nbsp;
     <br />
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"  CssClass="table-style" DataKeyNames="id" DataSourceID="SqlDataSource2" Height="472px" Width="1336px">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"  CssClass="table-style center-gridview" DataKeyNames="id" DataSourceID="SqlDataSource2" Height="472px" Width="1336px" AllowPaging="True" AllowSorting="True">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
             <asp:BoundField DataField="firstname" HeaderText="firstname" SortExpression="firstname" />
@@ -55,7 +62,7 @@
     </asp:GridView>
     <br />
     <br />
-    <asp:Button ID="EDIT0" runat="server" PostBackUrl="~/donoredit.aspx" Text="EDIT" Width="410px" CssClass="btn" />
+    <asp:Button ID="EDIT0" runat="server" PostBackUrl="~/donoredit.aspx" Text="EDIT" Width="410px" CssClass="btn ml-5" />
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:bloodBankDBConnectionString %>" SelectCommand="SELECT * FROM [detailsdonor]"></asp:SqlDataSource>
     <br />
     <br />
@@ -63,8 +70,12 @@
     <br />
     <br />
     <br />
-    <asp:Label ID="Label5" runat="server" Text="user details"></asp:Label>
-    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource3" Height="499px" Width="1334px" CssClass="table-style">
+    <div class="card-header bg-success text-white text-center">
+     <h3>User Details</h3>
+ </div>   &nbsp;&nbsp;
+   <br />
+    <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
+    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource3" Height="499px" Width="1334px" CssClass="table-style  center-gridview" AllowPaging="True" AllowSorting="True">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
             <asp:BoundField DataField="firstname" HeaderText="firstname" SortExpression="firstname" />
@@ -80,7 +91,7 @@
         </Columns>
     </asp:GridView>
     <br />
-    <asp:Button ID="EDIT2" runat="server" PostBackUrl="~/useredit.aspx" Text="EDIT" Width="410px" CssClass="btn"/>
+    <asp:Button ID="EDIT2" runat="server" PostBackUrl="~/useredit.aspx" Text="EDIT" Width="410px" CssClass="btn ml-5"/>
     <br />
     <br />
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:bloodBankDBConnectionString %>" SelectCommand="SELECT * FROM [detailsuser]"></asp:SqlDataSource>

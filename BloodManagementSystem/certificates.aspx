@@ -12,7 +12,7 @@
               <div class="col-md-6 mb-3">
          <asp:Label ID="lblID" runat="server" Text="ID: "></asp:Label>
 <asp:TextBox ID="txtID" runat="server" placeholder="Enter ID" CssClass="input"></asp:TextBox>
-        
+      <asp:Button ID="search" runat="server" Text="Search"  CssClass="btn" OnClick="search_Click"  />   
      </div><br />
                     <div class="col-md-6 mb-3">
     <asp:Label ID="lblFirstName" runat="server" Text="First Name: "></asp:Label>
@@ -47,7 +47,7 @@
          </div>
          </div>
           <div class="d-grid">
-     <asp:Button ID="btnViewCertificate" runat="server" Text="View Certificate"  CssClass="btn" OnClick="btnViewCertificate_Click" PostBackUrl="~/viewcertificate.aspx" />
+     <asp:Button ID="btnViewCertificate" runat="server" Text="View Certificate"  CssClass="btn" OnClick="btnViewCertificate_Click" />
               
  </div>
 </div>

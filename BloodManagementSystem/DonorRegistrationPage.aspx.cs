@@ -71,7 +71,7 @@ namespace BloodManagementSystem
                             if (rowsAffected > 0)
                             {
 
-                                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Registration Successfully returnto login page')", true);
+                                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Registration Successfully')", true);
                                 con.Close();
                                 firstName.Text = "";
                                 lastName.Text = "";

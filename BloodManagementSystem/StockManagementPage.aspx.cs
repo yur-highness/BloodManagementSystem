@@ -72,12 +72,12 @@ namespace BloodManagementSystem
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            Response.Write("<script>alert('Donor registered successfully.');</script>");
+                            Response.Write("<script>alert('Stock registered successfully.');</script>");
                            
                         }
                         else
                         {
-                            Response.Write("<script>alert('Error: Donor registration failed.');</script>");
+                            Response.Write("<script>alert('Error: Stock registration failed.');</script>");
                         }
                         id.Text = "";
                         bloodgroup1.Text = "";
@@ -111,6 +111,15 @@ namespace BloodManagementSystem
                 adapter.Fill(dt);
                 GridView.DataSource = dt;
                 GridView.DataBind();
+            }
+
+        }
+
+        protected void load_Click(object sender, EventArgs e)
+        {
+            if (IsPostBack)
+            {
+                LoadBloodStocks();
             }
 
         }

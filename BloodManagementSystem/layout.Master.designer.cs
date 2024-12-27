@@ -78,13 +78,13 @@ namespace BloodManagementSystem
         protected global::System.Web.UI.WebControls.HyperLink certificate;
 
         /// <summary>
-        /// login1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login1;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// logout1 control.
@@ -105,13 +105,13 @@ namespace BloodManagementSystem
         protected global::System.Web.UI.WebControls.Button viewDATA;
 
         /// <summary>
-        /// Label1 control.
+        /// login1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Button login1;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

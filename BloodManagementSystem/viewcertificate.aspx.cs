@@ -11,9 +11,7 @@ namespace BloodManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //name.Text = Request.QueryString["name"];
-           
-            //date.Text = Request.QueryString["date"];
-        }
+        name.Text  = Request.QueryString["a1"];
+        date.Text = Request.QueryString["a2"];      }
     }
 }

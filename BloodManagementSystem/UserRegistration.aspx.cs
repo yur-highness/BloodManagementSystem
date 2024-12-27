@@ -15,7 +15,7 @@ namespace BloodManagementSystem
         string strrcon = ConfigurationManager.ConnectionStrings["connString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+            
         }
 
         //user defined function
@@ -61,7 +61,7 @@ namespace BloodManagementSystem
                         con.Close();
 
 
-                        Response.Write("<script>alert('register successfully go to login page')</script>");
+                        Response.Write("<script>alert('register successfully go to Home and login')</script>");
                         //Response.Redirect("UserLoginPage.aspx");
                         firstname.Text = "";
                         lastname.Text = "";

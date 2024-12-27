@@ -76,10 +76,10 @@
                 </asp:GridView>
                 <br />
                <asp:TextBox ID="date" runat="server" TextMode="Date" CssClass="form-control" placeholder="Enter Collection Date" Height="38px" Width="330px" ></asp:TextBox>
-                <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+                <asp:Button ID="Button2" runat="server" Text="Search" CssClass="btn" OnClick="Button2_Click" />
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bloodBankDBConnectionString %>" SelectCommand="SELECT * FROM [detailsstock]"></asp:SqlDataSource>
             
-                
+                  <asp:Button ID="load" runat="server" Text="overall data" CssClass="btn" OnClick="load_Click"  />
               
             </div>
         </div>

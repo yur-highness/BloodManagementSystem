@@ -21,6 +21,7 @@ namespace BloodManagementSystem
                     certificate.Visible = false;
                     donorreg.Visible = false;
                     viewDATA.Visible = false;
+                    logout1.Visible = false;
                    
                     
                 }

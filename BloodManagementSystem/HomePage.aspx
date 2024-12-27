@@ -71,25 +71,25 @@ Together, we can make a difference, one donation at a time!
                 <div class="col-md-6">
                     <blockquote class="blockquote">
                         <p class="mb-0">"This system made it so easy to donate blood and save lives. Highly recommend!"</p>
-                        <footer class="blockquote-footer">John Doe</footer>
+                        <footer class="blockquote-footer py-5">John Doe</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-6">
                     <blockquote class="blockquote">
                         <p class="mb-0">"Efficient, reliable, and user-friendly. A life-saving platform!"</p>
-                        <footer class="blockquote-footer">Jane Smith</footer>
+                        <footer class="blockquote-footer  py-5">Jane Smith</footer>
                     </blockquote>
                 </div>
                  <div class="col-md-6">
      <blockquote class="blockquote">
          <p class="mb-0">"Efficient, reliable, and user-friendly. A life-saving platform!"</p>
-         <footer class="blockquote-footer">Jane Smith</footer>
+         <footer class="blockquote-footer   py-5">Jane Smith</footer>
      </blockquote>
  </div>
                  <div class="col-md-6">
      <blockquote class="blockquote">
          <p class="mb-0">"Efficient, reliable, and user-friendly. A life-saving platform!"</p>
-         <footer class="blockquote-footer">Jane Smith</footer>
+         <footer class="blockquote-footer py-5">Jane Smith</footer>
      </blockquote>
  </div>
             </div>
@@ -125,12 +125,12 @@ Together, we can make a difference, one donation at a time!
                         </div>
                         <div class="d-grid">
                           
-                            <asp:Button ID="Button1" runat="server" Text="Send Message" class="btn" OnClick="Button1_Click" />
+                            <asp:Button ID="Button1" runat="server" Text="Send Message" class="btn" OnClick="Button1_Click" Width="203px" />
                         </div>
                     
                 </div>
-            </div>
-        </div>
+                       
+
     </section>
 
 
